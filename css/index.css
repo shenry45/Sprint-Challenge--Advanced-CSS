@@ -175,6 +175,7 @@ header.nav div {
 header.nav h1 {
   font-size: 4rem;
   text-align: center;
+  animation: float 15s linear 2s infinite;
 }
 header.nav nav {
   padding: 20px 0 15px;
@@ -310,4 +311,21 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@keyframes float {
+  0% {
+    transform: rotateZ(0) translateX(0);
+  }
+  25% {
+    transform: rotateZ(3deg) translateX(50px);
+  }
+  50% {
+    transform: rotateZ(0) translateX(0deg);
+  }
+  75% {
+    transform: rotateZ(-3deg) translateX(-50px);
+  }
+  100% {
+    transform: rotateZ(0) translateX(0deg);
+  }
 }
