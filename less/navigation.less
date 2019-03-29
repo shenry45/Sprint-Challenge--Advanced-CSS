@@ -1,1 +1,32 @@
 // Navigation code here
+
+header.nav {
+  width: 100%;
+  padding-top: 15px;
+  background-color: #f6f6f6;
+
+  div {
+    width: 375px;
+    margin: 0 auto;
+    .flex(column nowrap, center);
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    animation: float 15s linear 2s infinite;
+  }
+
+  nav {
+    padding: 20px 0 15px;
+    .flex(row nowrap, space-between);
+
+    a {
+      font-size: 1.6rem;
+      color: #454a72;
+      .bold();
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}

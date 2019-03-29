@@ -1,1 +1,24 @@
 // Mixins Here
+.bold() {
+  font-weight: bold;
+}
+.flex(@flow, @just) {
+  display: flex;
+  justify-content: @just;
+  flex-flow: @flow;
+}
+.button(@color, @bg-color) {
+  cursor: pointer;
+  width: 100px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: @color;
+  padding: 10px 20px;
+  background: @bg-color;
+  border-radius: 5px;
+
+  &:hover {
+    color: @bg-color;
+    background: @color;
+  }
+}
